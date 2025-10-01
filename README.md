@@ -19,12 +19,12 @@ https://learn.microsoft.com/en-us/azure/service-bus-messaging/test-locally-with-
 
 ## File 'local.settings.json'
 Create the file 'local.settings.json' inside the folder '.\src\AzureFunction\' as below:  
-{
-  "IsEncrypted": false,
-  "Values": {
-    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
-    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
-    // Local
-    "ServiceBusConnection": "Endpoint=sb://localhost:5672;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;"
-  }
-}
+{  
+  "IsEncrypted": false,  
+  "Values": {  
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",  
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",  
+    // Local  
+    "ServiceBusConnection": "Endpoint=sb://localhost:5672;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;"  
+  }  
+}  
