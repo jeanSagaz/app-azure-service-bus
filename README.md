@@ -1,5 +1,5 @@
 ## Give a Star! :star:
-If you liked the project or if 'Azure Service Bus' helped you, please give a star ;)
+If you liked the project 'Azure Service Bus' helped you, please give a star ;)
 
 ## Technologies implemented:
 
