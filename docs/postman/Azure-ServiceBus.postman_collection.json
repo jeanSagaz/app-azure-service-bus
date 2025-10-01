@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "fabe06a4-5ba9-4589-b8ce-2ef9fe408bcc",
+		"name": "Azure-ServiceBus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "641781"
+	},
+	"item": [
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"989417e9-3da9-4a0d-a185-009f6e7bfe26\",\r\n    \"customer-name\": \"Neo\",\r\n    \"date\": \"2025-09-21T00:00:21.318Z\",\r\n    \"total-amount\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7069/api/OrderFunction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"OrderFunction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"989417e9-3da9-4a0d-a185-009f6e7bfe26\",\r\n    \"customer-name\": \"Morpheus\",\r\n    \"date\": \"2025-09-21T00:00:21.318Z\",\r\n    \"total-amount\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7069/api/PaymentFunction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7069",
+					"path": [
+						"api",
+						"PaymentFunction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
